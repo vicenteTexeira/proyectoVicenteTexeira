@@ -96,7 +96,6 @@ h3 {
     margin-top: 100px;
 }
 .footer h2{
-    font-size: 20px;
     text-align: left;
     padding-top: 20px;
     padding-left: 20px;
@@ -177,8 +176,9 @@ h3 {
     justify-content: space-evenly;
 }
 
+
 .tarjetasProducto div img{
-    width: 300px;
+    width: 100%;
     height: 500px;
     object-fit: cover;
 }
@@ -188,13 +188,24 @@ h3 {
     text-align: center;
 }
 
+@media(max-width:768px){
+    .tarjetasProducto{
+        flex-wrap: wrap
+    }
+    .tarjetasProducto h3{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
 /* Grid en página "nosotros" */
 
 .grid-padre{
     margin-top: 50px;
     gap: 5px;
     display: grid;
-    grid-template-columns: 5fr 1fr 5fr;
+    grid-template-columns: 4fr 1fr 4fr;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas: "p1 p1 img1"
                          "img2 p2 p2"
