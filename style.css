@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fasthand&display=swap');
+
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+main h1{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+
+/*navegador*/
+.navegador{background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+.navegador ul{list-style-type: none;
+}
+.navegador a img {
+    margin: 20px 0px 0px 40px;
+    width: 180px;
+}
+.navegador li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.links{
+    margin-right: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+
+
+.tarjetas div h2 {text-align: center;
+}
+.tarjetas div img {
+    width: 300px;
+    height: 200px;
+}   
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 50px 70px 50px;
+    }
+
+.boton{
+    margin-left: 610px;
+    margin-bottom: 40px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+}
+.boton:hover{
+    font-weight: bold;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+}
+.parrafo p {
+    width: 450px;
+    text-align: justify;
+    margin-top: 100px;
+    font-size: larger;
+}
+.parrafo img {
+    width:450px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+/*footer*/
+.footer{
+    width: 100%; 
+    height: 200px;
+    background-color: rgb(23, 23, 23);
+    color: aliceblue;
+    margin-top: 100px;
+}
+.footer h2{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Fasthand', cursive;
+    font-size: 32px;
+}
+.footer ul li{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto img {
+    width: 500px;
+    object-fit: cover;
+}
+
+.formulario h2{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.formulario ul li input{
+    width: 400px;
+    height: 20px;
+    margin: 8px;
+}
+
+.formulario form ul li{   
+    text-align: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.formulario ul li button{
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    width: 70px;
+}
+
+.nosotros h3{
+    text-align: start;
+    margin-left: 50px;
+}
+
+.nosotros p{
+    margin: 40px 80px 50px 100px;
+    font-size: 20px;
+}
+
+#nosotros{
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.tarjetasProducto {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetasProducto div img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.tarjetasProducto h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Grid en página "nosotros" */
+
+.grid-padre{
+    margin-top: 50px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "p1 p1 img1"
+                         "img2 p2 p2"
+                         "p3 p3 img3"
+                         "img4 img4 img4";
+}
+
+.grid-padre img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+ }
+
+.grid-padre div p{
+    font-size: 22px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+    margin-top: 60px;
+}
+
+.carousel-item img{
+    height: 700px;
+    object-fit: cover;
+}
